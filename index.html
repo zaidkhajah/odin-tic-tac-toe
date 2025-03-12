@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="active-player"></div>
+    <div class="game-board"></div>
+
+    <div class="start-menu-container">
+        <h2>Start Menu</h2>
+        <div>
+            <label for="p1-name">player 1:</label>
+            <input type="text" name="p1-name" class="player-name-input" value="P1">
+            <label for="p1-mark">mark:</label>
+            <input type="text" name="p1-mark" class="player-mark-input" value="X" maxlength="1">
+            <label for="p1-color">color:</label>
+            <input type="color" name="p1-color" class="player-color-input" value="#885A89">
+        </div>
+
+        <div>
+            <label for="p2-name">player 2:</label>
+            <input type="text" name="p2-name" class="player-name-input" value="P2">
+            <label for="p2-mark">mark:</label>
+            <input type="text" name="p2-mark" class="player-mark-input" value="O" maxlength="1">
+            <label for="p2-color">color:</label>
+            <input type="color" name="p2-color" class="player-color-input" value="#8AA8A1">
+        </div>
+        <button class="play-button">PLAY</button>
+    </div>
+
+    <div class="results-menu-container">
+        <h2>Results</h2>
+        <div class="last-game-winner">
+            
+        </div>
+        <div class="current-score-container">
+
+        </div>
+
+        <div class="end-buttons">
+            <button class="play-again-button">Play Again!</button>
+            <button class="end-game-button">End Game!</button>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

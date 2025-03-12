@@ -1,0 +1,64 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    margin: 0px 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.game-board {
+    display: none;
+    height: 550px;
+    width: 550px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 7rem;
+    border: 1px solid grey;
+    height: 180px;
+    width: 180px;
+    background: white;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: grey;
+}
+
+.start-menu-container, .results-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #EE7B30;
+    border: 4px solid #8AA8A1;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 16px;
+}
+
+.results-menu-container {
+    display: none;
+}
